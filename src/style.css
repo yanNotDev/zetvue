@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+/* * {
+  background: rgb(0 100 0 / 0.1) !important;
+} */
+
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 500;
+
+  color: snow;
+
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 120px;
+  padding-bottom: 15px;
+  left: 0;
+
+
+}
+
+header {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    font-size: 1.5rem;
+  }
+}
+
+h1 {
+  font-family: "Press Start 2P", "MonoSpace", sans-serif;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: chartreuse;
+}
+
+section {
+  margin-top: 768px;
+  height: 5760px;
+  text-align: center;
+}
+
+#music {
+  height: 960px;
+}
+
+#contact {
+  margin-top: 0;
+  height: 192px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>Zetvue</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <main id="main">
+      <header>
+        <h1>zetvue</h1>
+        <h3>
+          <p id="typewriter"></p>
+        </h3>
+      </header>
+      <section>
+        <h2>
+          watch my portfolio fly past
+        </h2>
+      </section>
+      <section id="music">
+        <h2>i also make music</h2>
+       <audio id="audio" src="assets/audio.mp3" controls></audio> 
+      </section>
+      <section id="contact">
+        <h2>interested? <a href="https://zetvue.github.io/" target="_blank">contact me</a></h2>
+      </section>
+    <a href="#main"><img src="./assets/mouse.svg" alt="scroll to top"></a>
+    </main>
+    <script>
+      var app = document.getElementById("typewriter");
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+      });
+
+      let phrase1 = "graphics designer";
+      let phrase2 = "producer";
+      let phrase3 = "innovator";
+      let delay = 2000;
+
+      typewriter
+        .pauseFor(delay)
+        .typeString(phrase1)
+        .pauseFor(delay)
+        .deleteChars(phrase1.length)
+        .pauseFor(delay)
+        .typeString(phrase2)
+        .pauseFor(delay)
+        .deleteChars(phrase2.length)
+        .pauseFor(delay)
+        .typeString(phrase3)
+        .pauseFor(delay)
+        .start();
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
